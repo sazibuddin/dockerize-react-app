@@ -1,0 +1,10 @@
+reactblog:
+  build: .
+  container_name: my_react_blog
+  ports:
+    - '3000:3000'
+  volumes:
+    - '.:/project'
+    - '/project/node_modules'
+  stdin_open: true
+  tty: true
